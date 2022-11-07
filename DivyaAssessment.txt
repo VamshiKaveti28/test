@@ -1,0 +1,151 @@
+package com.divya.assignment;
+
+import java.util.Scanner;
+import java.util.Set;
+
+public class CompareTwo {
+
+	
+	 public static void main(String[] argv)  
+	    {  
+	          
+	        Set<String> set1 = new HashSet<String>();  
+	    
+	        set1.add("Paul");  
+	        set1.add("Donal");  
+	        set1.add("William");  
+	        set1.add("Johnson");  
+	        set1.add("Emma");  
+	      
+	        System.out.println("The values in the 1st set are: "+ set1);  
+	        System.out.println();  
+	        System.out.println("The size of the 1st set is: "+ set1.size());  
+	       
+	        Set<String> set2 = new HashSet<String>();  
+	        // fill values in the set2  
+	        set2.add("Paul");  
+	        set2.add("Johnson");  
+	        set2.add("Donal");  
+	        set2.add("Emma");  
+	        set2.add("William");  
+	        // print the values and size of the set2  
+	        System.out.println("The values in the 2nd set are: "+ set2);  
+	        System.out.println();  
+	        System.out.println("The size of the 2nd set is: "+ set2.size());  
+	        // use equals() method to compare set1 and set2  
+	        boolean result = set1.equals(set2);  
+	        // print the result  
+	        if(result) {  
+	            System.out.println("Set1 and Set2 are equal.");  
+	        }else {  
+	            System.out.println("Set1 and Set2 are not equal.");  
+	        }  
+	    }  
+	}  
+====================================================================================================
+package com.divya.assignment;
+
+public class CountString {
+
+	
+
+		 public static void main(String[] args) {    
+		        String string = "welcome mass mutual";    
+		        int count = 0;    
+		            
+		        
+		        for(int i = 0; i < string.length(); i++) {    
+		            if(string.charAt(i) != ' ')    
+		                count++;    
+		        }    
+		            
+		          
+		        System.out.println("Total number of characters in a string: " + count);    
+		    }    
+		}     
+	
+
+======================================================================================================================
+package com.divya.assignment;
+
+import java.util.ArrayList;
+import java.util.stream.Collectors;
+
+public class HashSet {
+
+	
+	public static void main (String[] args) {
+	      HashSet<String> set = new HashSet<>(); //Creation of HashSet
+	       
+	      set.add("welcome");
+	      set.add("mass");
+	      set.add("mutual");
+	      
+	      ArrayList<String> list =new ArrayList<>(); //Creation of ArrayList
+	      list.addAll(set); //HashSet to ArrayList
+	       
+	      System.out.println("I am from HashSet "+set);
+	      System.out.println("I am from ArrayList "+list);
+	    }
+	}
+
+
+	
+	===================================================================================================================
+package com.divya.assignment;
+
+import java.util.Iterator;
+import java.util.TreeSet;
+
+public class ReversOrder {
+
+	
+	public static void main(String[] args) {
+	    
+	     TreeSet<String> t = new TreeSet<String>();
+	   
+	          t.add("Red");
+	          t.add("Green");
+	          t.add("Black");
+	          t.add("Pink");
+	          t.add("orange");
+	   
+	   System.out.println("Original tree set:" + t);  
+	     Iterator it = t.descendingIterator();
+	    
+	     System.out.println("Elements in Reverse Order:");
+	     while (it.hasNext()) {
+	        System.out.println(it.next());
+}
+}
+}
+==============================================================================================
+package com.divya.assignment;
+
+import java.util.Scanner;
+
+public class SumOfThree {
+
+	public static void main(String[] args) {
+	
+		 
+		int x, y, sum;  
+		Scanner sc = new Scanner(System.in);  
+		System.out.print("Enter the first number: ");  
+		x = sc.nextInt();  
+		System.out.print("Enter the second number: ");  
+		y = sc.nextInt();  
+		sum = sum(x, y);  
+		System.out.println("The sum of two numbers x and y is: " + sum);  
+		}  
+ 
+		public static int sum(int a, int b)  
+		{  
+			int sum=a+b;
+			return sum;
+		}
+	}
+
+
+
+
