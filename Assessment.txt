@@ -1,0 +1,68 @@
+package pojo;
+import java.util.ArrayList;
+import java.util.HashSet;
+public class ConverttoList {
+		public static void main(String[] args)
+		{
+
+			HashSet<String> set = new HashSet<>();
+
+			set.add("iphone");
+			set.add("samsung");
+			set.add("oppo");
+			set.add("oneplus");
+
+			ArrayList<String> array
+				= new ArrayList<>(set);
+
+			System.out.println(
+				"Elements of Arraylist are :");
+			System.out.println(array);
+			
+			System.out.print("Element at index 0 is : " + array.get(0) + " ");
+		}
+	}
+============================================================================================================================
+
+package pojo;
+import java.util.Scanner;
+public class SumofNUmber {
+		public static void main(String args[])  
+		{  
+		int number, digit, sum = 0;  
+		Scanner sc = new Scanner(System.in);  
+		System.out.print("Enter the number: ");  
+		number = sc.nextInt();  
+		while(number > 0)  
+		{  
+		digit = number % 10;  
+		sum = sum + digit;  
+		number = number / 10;  
+		}  
+		System.out.println("Sum of Digits: "+sum);  
+		}  
+		
+
+	}
+====================================================================================================================================
+
+package pojo;
+import java.util.*;
+
+public class unique{
+static int cntDistinct(String str)
+{
+	HashSet<Character> s = new HashSet<Character>();
+	for(int i = 0; i < str.length(); i++)
+	{
+		s.add(str.charAt(i));
+	}
+	return s.size();
+}
+public static void main(String args[])
+{
+	String str = "vamshi";
+	System.out.print(cntDistinct(str));
+}
+}
+
